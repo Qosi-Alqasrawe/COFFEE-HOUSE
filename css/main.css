@@ -122,6 +122,11 @@ header {
     position: relative;
     border-bottom: 1px solid var(--main-color);
 }
+@media (max-width:767px) {
+    header {
+        height: 100vh;
+    }
+}
 header::after {
     content: "";
     position: absolute;
@@ -138,6 +143,12 @@ header .container {
     height: 625px;
     flex-wrap: wrap;
 }
+@media (max-width:767px) {
+    header .container {
+        height: 100vh;
+    }
+}
+
 header .container .head {
     display: flex;
     justify-content: space-between;
